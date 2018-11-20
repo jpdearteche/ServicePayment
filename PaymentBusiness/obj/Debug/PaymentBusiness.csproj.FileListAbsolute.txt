@@ -1,0 +1,12 @@
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\PaymentBusiness.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\PaymentBusiness.pdb
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\PaymentDataAccess.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\RabbitMQ.Client.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\PaymentDataAccess.pdb
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\PaymentDataAccess.dll.config
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\bin\Debug\RabbitMQ.Client.xml
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\obj\Debug\PaymentBusiness.csprojAssemblyReference.cache
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\obj\Debug\PaymentBusiness.csproj.CoreCompileInputs.cache
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\obj\Debug\PaymentBusiness.csproj.CopyComplete
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\obj\Debug\PaymentBusiness.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentBusiness\obj\Debug\PaymentBusiness.pdb

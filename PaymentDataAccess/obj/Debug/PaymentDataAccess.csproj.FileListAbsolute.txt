@@ -1,0 +1,9 @@
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\bin\Debug\PaymentDataAccess.dll.config
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\bin\Debug\PaymentDataAccess.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\bin\Debug\PaymentDataAccess.pdb
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\obj\Debug\PaymentDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\obj\Debug\PaymentDataAccess.csproj.CopyComplete
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\obj\Debug\PaymentDataAccess.dll
+C:\Users\deart\source\repos\PaymentServices\PaymentDataAccess\obj\Debug\PaymentDataAccess.pdb

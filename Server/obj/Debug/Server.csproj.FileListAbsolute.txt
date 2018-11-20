@@ -1,0 +1,9 @@
+C:\Users\deart\source\repos\PaymentServices\Server\bin\Debug\Server.exe.config
+C:\Users\deart\source\repos\PaymentServices\Server\bin\Debug\Server.exe
+C:\Users\deart\source\repos\PaymentServices\Server\bin\Debug\Server.pdb
+C:\Users\deart\source\repos\PaymentServices\Server\bin\Debug\RabbitMQ.Client.dll
+C:\Users\deart\source\repos\PaymentServices\Server\bin\Debug\RabbitMQ.Client.xml
+C:\Users\deart\source\repos\PaymentServices\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\deart\source\repos\PaymentServices\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\deart\source\repos\PaymentServices\Server\obj\Debug\Server.exe
+C:\Users\deart\source\repos\PaymentServices\Server\obj\Debug\Server.pdb

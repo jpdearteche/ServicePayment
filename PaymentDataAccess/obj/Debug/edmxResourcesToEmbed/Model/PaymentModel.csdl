@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PaymentServicesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="IdStatus" />
+    </Key>
+    <Property Name="IdStatus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Payment" Relationship="PaymentServicesModel.FK_Payment_Status" FromRole="Status" ToRole="Payment" />
+  </EntityType>
+  <EntityContainer Name="PaymentServicesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="Payment" EntityType="PaymentServicesModel.Payment" />
+    <AssociationSet Name="FK_Payment_Status" Association="PaymentServicesModel.FK_Payment_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+    <EntitySet Name="PaymentType" EntityType="PaymentServicesModel.PaymentType" />
+    <AssociationSet Name="FK_Payment_PaymentType" Association="PaymentServicesModel.FK_Payment_PaymentType">
+      <End Role="PaymentType" EntitySet="PaymentType" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="IdPayment" />
+    </Key>
+    <Property Name="IdPayment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ClientCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPayment" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PaymentDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdStatus" Type="Int32" Nullable="false" />
+    <Property Name="IdPaymentType" Type="Int32" Nullable="false" />
+    <Property Name="OrderNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Status" Relationship="PaymentServicesModel.FK_Payment_Status" FromRole="Payment" ToRole="Status" />
+    <NavigationProperty Name="PaymentType" Relationship="PaymentServicesModel.FK_Payment_PaymentType" FromRole="Payment" ToRole="PaymentType" />
+  </EntityType>
+  <Association Name="FK_Payment_Status">
+    <End Type="PaymentServicesModel.Status" Role="Status" Multiplicity="1" />
+    <End Type="PaymentServicesModel.Payment" Role="Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="IdStatus" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="IdStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="IdPaymentType" />
+    </Key>
+    <Property Name="IdPaymentType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Payment" Relationship="PaymentServicesModel.FK_Payment_PaymentType" FromRole="PaymentType" ToRole="Payment" />
+  </EntityType>
+  <Association Name="FK_Payment_PaymentType">
+    <End Type="PaymentServicesModel.PaymentType" Role="PaymentType" Multiplicity="1" />
+    <End Type="PaymentServicesModel.Payment" Role="Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentType">
+        <PropertyRef Name="IdPaymentType" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="IdPaymentType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
